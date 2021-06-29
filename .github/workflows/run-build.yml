@@ -1,0 +1,16 @@
+name: "Run Build"
+
+on:
+  push:
+    branches: [ dev ]
+  pull_request:
+    branches: [ dev ]
+  schedule:
+    - cron: '18 8 * * 3'
+    
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - run: mkdir build; cd build; cmake ..; cmake --build .
