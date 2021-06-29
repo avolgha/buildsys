@@ -4,4 +4,4 @@ project ("BuildSys")
 
 include_directories(${PROJECT_SOURCE_DIR}/include)
 
-add_executable (buildsys "buildconfig.cpp" "buildconfig.h"  "printer.cpp")
+add_executable (buildsys "buildsys.cpp")
