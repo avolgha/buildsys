@@ -1,0 +1,23 @@
+{
+  "name": "Example Config",
+  "version": "1.0.0",
+  "author": "Marius",
+  "description": "Example Configuration for showing how it works",
+  "jobs": [
+    {
+      "name": "Run Typescript Build",
+      "tasks": [ "tsc" ]
+    },
+    {
+      "name": "Formatting",
+      "tasks": [
+        "yarn lint",
+        "yarn prettier"
+      ]
+    },
+    {
+      "name": "Run tests",
+      "tasks": [ "yarn test" ]
+    }
+  ]
+}
